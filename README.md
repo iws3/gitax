@@ -1,6 +1,11 @@
 # GitaX AI Playground 🚀
 
 **An Interactive Machine Learning Platform for Learning and Experimentation**
+![image](https://github.com/user-attachments/assets/d685a1c9-6ce8-4b56-9f54-e4642497ea4b)
+![image](https://github.com/user-attachments/assets/4dbbf0f5-852f-4df6-a924-32b888e3582c)
+![image](https://github.com/user-attachments/assets/aacc2563-12f1-4de7-92aa-0a8198827582)
+
+
 
 [![Next.js](https://img.shields.io/badge/Next.js-14.0-black?logo=next.js&logoColor=white)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-18.0-blue?logo=react&logoColor=white)](https://reactjs.org/)
