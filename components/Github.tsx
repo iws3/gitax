@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import { Github, X, AlertCircle, Eye, EyeOff } from 'lucide-react';
 import Link from 'next/link';
 
-export function FloatingAdminAccess() {
+export function FloatingGithub() {
   
   return (
     <>

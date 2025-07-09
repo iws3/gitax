@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, FC, useRef, useEffect } from 'react';
-import { Target, Brain, BrainCircuit, Zap, Lightbulb } from 'lucide-react';
+import { Target, Brain, BrainCircuit, Zap, Lightbulb, Home } from 'lucide-react';
 // Import the context provider from the new, correct library
 import { MathJaxContext } from 'better-react-mathjax';
 import SupervisedLearningTab from '@/components/SupervisedLearningTab';
@@ -8,6 +8,7 @@ import UnsupervisedLearningTab from '@/components/UnsupervisedLearningTab';
 import NeuralNetworkTab from '@/components/NeuralNetworkTab';
 import ReinforcementLearningTab from '@/components/ReinforcementLearningTab';
 import GeminiResponseModal from '@/components/GeminiResponseModal';
+import Link from 'next/link';
 
 // Import all your tab components
 // import SupervisedLearningTab from '../components/SupervisedLearningTab';
@@ -117,11 +118,19 @@ const MLPlayground: FC = () => {
                     </header>
                     
                     <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-5 mb-10">
+                          <Link  href="/" className="px-5 py-2.5 rounded-lg font-medium transition-all flex items-center gap-2 bg-green-600">
+                                <Home size={20}/>Back Home
+                            </Link>
                         {tabs.map(({ id, Icon, title }) => (
+<>                       
                             <button key={id} onClick={() => setActiveTab(id as any)} className={`px-5 py-2.5 rounded-lg font-medium transition-all flex items-center gap-2 ${activeTab === id ? 'bg-blue-600 text-white scale-105 shadow-lg shadow-blue-500/20' : 'bg-slate-700 text-slate-300 hover:bg-slate-600'}`}>
                                 <Icon size={20}/>{title}
                             </button>
+                            </>
+
                         ))}
+
+                            
                     </div>
                     
                     <div ref={cardRef} className="bg-slate-800/40 backdrop-blur-xl border border-slate-700 rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 lg:p-10 transition-transform duration-200"
